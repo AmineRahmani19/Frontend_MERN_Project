@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Accueil from './pages/Accueil';
+import Login from './pages/Login';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
+            <Route path="/login" element= {<Login/>} />
             <Route path="/" element={<Accueil />} />
           </Routes>
         </main>
