@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Accueil from './pages/Accueil';
 import Login from './pages/Login';
+import Register from './pages/Register';
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/login" element= {<Login/>} />
+            <Route path="/regiter" element= {<Register/>} />
             <Route path="/" element={<Accueil />} />
           </Routes>
         </main>
